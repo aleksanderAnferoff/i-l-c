@@ -1,0 +1,25 @@
+<h2>Incoming:</h2>
+
+<table class="table">
+	<thead>
+		<tr>
+			<th>Email</th>
+			<th>Name</th>
+			<th>Lastname</th>
+		</tr>
+	</thead>
+
+	<tbody>
+	<% @results.each do |row| %>
+		<tr>
+			<td><%= row['email'] %></td>
+			<td><%= row['name'] %></td>
+			<td><%= row['lastname'] %></td>
+		</tr>
+	<% end %>
+	</tbody>
+</table>
+
+<form action="/login" method="POST">
+	<button type="Logout" class="btn btn-primary">Logout</button>	
+</form>
